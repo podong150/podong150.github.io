@@ -1,0 +1,50 @@
+.sitetitle {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    font-family: Arial, sans-serif;
+    color: #668fc5;
+    font-size: 30px;
+    margin: 0;
+    z-index: 4;
+    padding-right: 40px;
+}
+
+.calendartext {
+    position:absolute;
+    left:calc(33.33% + 40px);
+    top:10%;
+    height:40vh;
+    z-index:4;
+}
+
+.calendartext div {
+    margin: 8px 0;       
+    width: auto;
+    padding: 8px;        
+    word-wrap: break-word;
+    color: #5a7cb8;      
+    font-size: 28px;     
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.4;    
+}
+
+.calendartext li.number{
+    font-weight: 600;
+    display: inline;
+    margin:0 8px;
+    color:#4a6ba5;
+}
+
+#author{
+    position: absolute;
+    bottom: 30px;
+    right: 48px;
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+    color: #668fc5;
+    font-size: 25px;
+    margin: 0;
+    z-index: 4;
+}
+

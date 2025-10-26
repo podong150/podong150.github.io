@@ -1,0 +1,185 @@
+.navbar {
+    position: fixed;
+    bottom: 31vh;
+    left: calc(33.33vw + 40px);
+    width: 58.7%;
+    border: 3px solid rgba(90, 124, 184, 0.3);
+    height: calc(9vh + 14px);
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+#engine {
+    padding: 8px 16px;
+    height:50px;
+    border: 2px solid #5a7cb8;
+    border-radius: 10px;
+    color: #5a7cb8;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+#engine:hover{
+    background-color: aliceblue;
+}
+
+.searchinput {
+    flex:1;
+    padding: 8px ;
+    border: 2px solid #a1a6d7;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(1px); 
+    border-radius: 10px;
+    font-size: 20px;
+    height: 50px;
+    box-sizing: border-box;
+    outline: none;
+    color: #5a7cb8;
+}
+
+.searchinput:focus {
+    border-color: #5a7cb8;
+}
+.searchinput::placeholder {
+    color: rgba(90, 124, 184, 0.7); 
+
+}
+
+.searchbutton {
+    padding: 8px 16px;
+    height: 48px;
+    background: #5a7cb8;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchbutton:hover {
+    background: #4a6ba5;
+}
+
+
+.iconbar {
+    position: fixed;
+    bottom: 15vh;
+    left: calc(33.33vw + 40px);
+    width: 58.7%;
+    border: 3px solid rgba(90, 124, 184, 0.3);
+    height: calc(8vh + 14px);
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.iconbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.iconbar a:hover {
+    background-color: rgba(90, 124, 184, 0.2);
+    transform: translateY(-3px);
+}
+
+.iconbar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+#customsites {
+    display: none;
+}
+#addsite {
+    width: 45px;
+    height: 45px;
+    border: 2px dashed #5a7cb8;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #5a7cb8;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#addsite:hover {
+    background: rgba(90, 124, 184, 0.2);
+    transform: scale(1.05);
+}
+
+.addsitewindow {
+    position: fixed;
+    bottom: 0;
+    left: calc(57vw);
+    width: 300px;
+    height:100px;
+    background: rgba(255,255,255, 0.9);
+    border: 2px solid #5a7cb8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 5;
+    display: none;
+}
+
+.addsitewindow h3 {
+    color: #5a7cb8;
+    margin-top: -15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.addsitewindow input {
+    width: 100%;
+    padding: 8px;
+    margin: 0 ;
+    border: 1px solid #a1a6d7;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.addsitewindow input:focus {
+    border-color: #5a7cb8;
+    outline: none;
+}
+
+.addsitewindow button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#confirm {
+    background: #5a7cb8;
+    color: white;
+    margin-right: 10px;
+}
+
+#confirm:hover {
+    background: #4a6ba5;
+}
+
+#cancel {
+    background: #e0e0e0;
+    color: #666;
+}
+
+#cancel:hover {
+    background: #d0d0d0;
+}

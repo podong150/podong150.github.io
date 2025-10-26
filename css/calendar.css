@@ -1,0 +1,86 @@
+.calendar{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:33.33vw;
+    height:40vh;
+    z-index:4;
+    border: 10px solid #ededed;
+}
+
+.top{
+    position: relative;
+    height:80px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left,#right{
+    font-weight: bold;
+    color:cornflowerblue;
+    cursor: pointer;
+}
+
+hr {
+    margin:0;
+    border-top: 1px solid #ededed;
+}
+
+#monthName{
+    font-size: 20px;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+#year{
+    font-size:16px;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.dateDisplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weeklist ul{
+    width:100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.weeklist ul li{
+    flex: 1; 
+    text-align: center;
+    padding: 5px ;
+    color:#666666;
+    font-weight: bold;
+}
+
+.daylist ul{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.daylist ul li{
+    flex: 0 0 calc(100%/7); 
+    text-align: center;
+    padding: 5px 0;
+    color:#8c8c8c;
+    font-weight: bold;
+}
+
+.daylist ul li.nowcolor{
+    color:#4a90e2 ;
+}
+
+.daylist ul li.futurecolor{
+    color:#666666;
+}

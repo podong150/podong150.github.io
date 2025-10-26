@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/words.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/photo.css">
+    <link rel="stylesheet" href="css/navigator.css">
+    <title>一种记录</title>
+</head>
+<body>
+    <h1 class="sitetitle">时间不变的地方</h1>
+
+    <div class="calendartext">
+        <br>
+        <div id="date"></div>
+        
+        <div id="day"></div>
+        <br>
+        <div id="sum"></div>
+        <br>
+        <div id="event"></div>
+    </div>
+
+    <div class="clockcontainer">
+        <div class = "clock">
+            <div class ="clockface">
+                <div class="hand hour"></div>
+                <div class="hand min"></div>
+                <div class="hand second"></div>
+
+                <div class="numeral">XII</div>
+                <div class="numeral">I</div>
+                <div class="numeral">II</div>
+                <div class="numeral">III</div>
+                <div class="numeral">IV</div>
+                <div class="numeral">V</div>
+                <div class="numeral">VI</div>
+                <div class="numeral">VII</div>
+                <div class="numeral">VIII</div>
+                <div class="numeral">IX</div>
+                <div class="numeral">X</div>
+                <div class="numeral">XI</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="photocontainer">
+        <img id = "gifimage">
+    </div>
+
+    <div  class="calendar">
+        <div class="top">
+        <span id ="left" onclick="leftclick()"> &lt;</span>
+
+        <div class="dateDisplay">
+            <span id="monthName">MonthName</span>
+            <span id="year">Year</span>
+        </div>
+        
+        <span id="right" onclick="rightclick()"> &gt;</span>
+        </div>
+        <hr>
+        <div class="body">
+            <div class="weeklist">
+            <ul>
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+            </ul>
+            </div>
+
+            <div class="daylist">
+            <ul id="days">
+
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <nav class ="navbar">
+        <button onclick = "changeEngine()" id="engine">百度</button>
+        <input type="text" id="input" placeholder="看什么好..." class="searchinput">
+        <button onclick = "performSearch()" class="searchbutton">搜索</button>
+    </nav>
+
+<div class="iconbar">
+    <a href="https://www.bilibili.com" target="_blank" >
+        <img src="https://www.bilibili.com/favicon.ico">
+    </a>
+    <a href="https://github.com" target="_blank">
+        <img src="https://github.com/favicon.ico">
+    </a>
+    <a href="https://fgo.wiki" target="_blank" >
+        <img src="https://fgo.wiki/favicon.ico">
+    </a>
+    <a href="https://www.deepseek.com" target="_blank" >
+        <img src="https://www.deepseek.com/favicon.ico">
+    </a>
+
+    <div id="customsites"></div>
+    <button id="addsite">+</button>
+</div>
+
+<div class="addsitewindow">
+    <h3>添加新网站</h3>
+    <input type="text" id="url" placeholder="输入地址">
+    <button id="confirm">添加</button>
+    <button id="cancel">取消</button>
+</div>
+
+    <div class="copyright">
+        <div id="author">辉辉制作</div>
+        <img id="logo"  src="img/badcapoo.png">
+    </div>
+
+    <script src="script/calendar.js"> </script>
+    <script src="script/search.js"> </script>
+    <script src="script/newsite.js"></script>
+</body>
+</html>
