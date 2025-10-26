@@ -39,7 +39,8 @@ function saveEngine(){
 
 function loadEngine(){
     var savedEngine = localStorage.getItem("searchEngine");
-    if(saveEngine){
+    if(savedEngine){
         engine.innerHTML = savedEngine;
     }
+
 }
