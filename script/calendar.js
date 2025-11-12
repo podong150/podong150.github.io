@@ -141,6 +141,7 @@ function wordload(){
 
     if(monthNow===10 && dayNow ===18){
         toHappen.innerHTML = "一帆，生日快乐！";
+        document.getElementById("gifimage").src = "img/乐扣.png";
     }
 
 
@@ -176,4 +177,5 @@ window.onload =function(){
     wordload();
     updateClock();
     this.setInterval(updateClock,1000);
+
 }
