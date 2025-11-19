@@ -1,9 +1,9 @@
 var monthNameCollection =["January","February","March","April","May","June",
     "July","August","September","October","November","December"];
-var weekdayCollection     =["下一顿吃什么好呢？" , "稍微摸会鱼吧...","今天也辛苦了！"];
-var weekendCollection     =["想好去哪里玩了吗？",  "好好睡一觉吧...","也有人在想你..."];
-var weekdayEmoji          =["img/吃什么.gif" ,"img/摸会鱼.gif","img/辛苦了.gif"];
-var weekendEmoji          =["img/去哪玩.gif" ,"img/睡一觉.gif","img/好想你.gif"];
+var weekdayCollection     =["下一顿吃什么好呢？" , "稍微摸会鱼吧...","今天也辛苦了！","鉴赏多线程中...","摸一摸，摸一摸，不哭..."];
+var weekendCollection     =["想好去哪里玩了吗？",  "好好睡一觉吧...","也有人在想你...","忙碌的一周结束了...","又有一周没抱抱了..."];
+var weekdayEmoji          =["img/吃什么.gif" ,"img/摸会鱼.gif","img/辛苦了.gif","img/好多事.gif","img/摸摸头.gif"];
+var weekendEmoji          =["img/去哪玩.gif" ,"img/睡一觉.gif","img/好想你.gif","img/睡大觉.gif","img/想撒娇.gif"];
 
 var monthNormal =[31,28,31,30,31,30,31,31,30,31,30,31];
 var monthOlympic=[31,29,31,30,31,30,31,31,30,31,30,31];
@@ -103,7 +103,7 @@ function rightclick(){
 
 function wordload(){
     var numberClass="class='number'";
-    let randomNumber = Math.ceil(Math.random()*3);
+    let randomNumber = Math.ceil(Math.random()*5);
 
     lineOne.innerHTML="今天是" + "<li " + numberClass + ">"+ yearNow +"</li>" +"年"
     +"<li " + numberClass + ">"+ (monthNow+1) +"</li>"+"月" 
@@ -179,3 +179,4 @@ window.onload =function(){
     this.setInterval(updateClock,1000);
 
 }
+
